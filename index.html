@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Black Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Black Screen</title>
 </head>
+
 <body>
     <div class="bg" id="bg"></div>
     <div class="container" id="container">
-        <input type="range" value="98" id="brightness" class="range-brightness rotate fade-in" >
+        <div class="range-warpper rotate" id="brightness">
+            <input type="range" min="0" max="100" value="0" class="range-brightness fade-in">
+            <img src="./assets/imgs/sun.svg" id="svg" class="img-brightness" alt="brightness">
+        </div>
+
+    </div>
+    <div class="full-screen-btn" id="fullScreen">
+        <span id="wordEnter" class="word-enter">Click For Fullscreen or press 'F11'</span>
+        <span id="wordExit" class="word-exit">Exit Fullscreen press 'Esc' or 'F11' again</span>
+        <img id="expand" src="./assets/imgs/expand.svg" class="img-full-screen" alt="">
+        <img id="close" src="./assets/imgs/close.svg" class="img-closs" alt="">
     </div>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
