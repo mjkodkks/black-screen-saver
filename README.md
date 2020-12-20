@@ -1,4 +1,4 @@
 # black-page
 
-[https://black-page.netlify.app](https://black-page.netlify.app)
+[https://b-screen.netlify.app](https://b-screen.netlify.app/)
 
